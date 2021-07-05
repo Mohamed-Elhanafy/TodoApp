@@ -1,15 +1,18 @@
 # _TodoApp_
 
-##### _This is a Simple  Note App with clean architecture, MVVM, Room Database, Navigation Components, Safe Args, and Search View!_
+##### _This is a Simple  Note App with clean architecture_
 
 ## Used Tech:
 
 
 * Kotlin
 * MVVM
-* Room
+* Room Database
 * LiveData
+* Navigation Components
+* Safe Args
 * ViewModel
+* Search View
 * ListAdapter for animations on data changes
 
 [![Screenshot-1625401742.png](https://i.postimg.cc/jjQMJpCZ/Screenshot-1625401742.png)](https://postimg.cc/940d6Nd7)
