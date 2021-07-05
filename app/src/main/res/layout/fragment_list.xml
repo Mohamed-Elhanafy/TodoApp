@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        tools:context=".Fragments.List.ListFragment">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:clickable="true"
+
+            android:focusable="true"
+            android:src="@drawable/ic_add"
+
+            android:navigateToAddFragment="@{true}"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/purple_200"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/noDataImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_empty"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/recycler_view"
+            app:layout_constraintEnd_toEndOf="@+id/recycler_view"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view"
+            app:layout_constraintTop_toTopOf="@+id/recycler_view" />
+
+        <TextView
+            android:id="@+id/NoDatatextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:alpha="0.5"
+            android:text="No Data"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/noDataImageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/noDataImageView"
+            app:layout_constraintTop_toBottomOf="@+id/noDataImageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
